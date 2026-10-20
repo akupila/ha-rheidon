@@ -1,0 +1,2 @@
+# Pins Home Assistant 2026.9.4 and pytest. Needs Python 3.14.
+pytest-homeassistant-custom-component==0.13.367

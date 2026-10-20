@@ -1,0 +1,84 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Rheidon+ account",
+        "description": "Sign in with the email and password you use in the Rheidon+ app.",
+        "data": {
+          "email": "Email",
+          "password": "Password",
+          "base_url": "API URL"
+        },
+        "data_description": {
+          "base_url": "Only change this if Rheidon moves their API. The default is the address used by the app."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Sign in again",
+        "description": "The Rheidon+ password for {email} was rejected.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid email or password.",
+      "cannot_connect": "Could not reach the Rheidon+ API.",
+      "unknown": "Unexpected error, see the logs."
+    },
+    "abort": {
+      "already_configured": "This account is already configured.",
+      "reauth_successful": "Signed in again."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "online": { "name": "Online" },
+      "charging": { "name": "Charging" }
+    },
+    "sensor": {
+      "status": {
+        "name": "Status",
+        "state": {
+          "plugged": "Plugged in",
+          "charging": "Charging",
+          "unplugged": "Unplugged",
+          "fault": "Fault",
+          "emergency_stop": "Emergency stop",
+          "discharging": "Discharging",
+          "paused": "Paused"
+        }
+      },
+      "power": { "name": "Power" },
+      "session_energy": { "name": "Session energy" },
+      "charge_start": { "name": "Charge start" },
+      "charge_end": { "name": "Charge end" },
+      "power_l1": { "name": "Power L1" },
+      "power_l2": { "name": "Power L2" },
+      "power_l3": { "name": "Power L3" },
+      "current_l1": { "name": "Current L1" },
+      "current_l2": { "name": "Current L2" },
+      "current_l3": { "name": "Current L3" },
+      "voltage_l1": { "name": "Voltage L1" },
+      "voltage_l2": { "name": "Voltage L2" },
+      "voltage_l3": { "name": "Voltage L3" }
+    },
+    "switch": {
+      "charging": { "name": "Charge" }
+    },
+    "number": {
+      "charge_current": { "name": "Charge current limit" }
+    },
+    "select": {
+      "mode": {
+        "name": "Charging mode",
+        "state": {
+          "plug_now": "Plug and charge",
+          "eco": "ECO",
+          "max": "MAX",
+          "manual": "Manual"
+        }
+      }
+    }
+  }
+}

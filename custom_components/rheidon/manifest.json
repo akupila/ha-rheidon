@@ -1,0 +1,12 @@
+{
+  "domain": "rheidon",
+  "name": "Rheidon+",
+  "codeowners": ["@akupila"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/akupila/ha-rheidon",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/akupila/ha-rheidon/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
